@@ -19,7 +19,7 @@ export default function Services({ settings, services }: ServicesProps) {
           transition={{ duration: 0.6 }}
           className="text-4xl md:text-5xl font-light mb-16 text-center"
         >
-          {settings?.servicesTitle || "WHAT YOU WILL GET"}
+          {settings?.servicesTitle || "How We Support Your Growth"}
         </motion.h2>
 
         {settings?.servicesSubtitle && (
