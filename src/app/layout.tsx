@@ -1,7 +1,13 @@
-export const metadata = {
+import type { Metadata } from "next";
+import "./globals.css";
+
+export const metadata: Metadata = {
   title: "Masud Nikson | Director, Editor & PhD Filmmaker",
   description: "Official portfolio of Masud Nikson. 15+ years of experience in filmmaking and strategic communication for global NGOs like BRAC, IFRC, and World Vision.",
   keywords: ["Masud Nikson", "Filmmaker", "Director", "Video Editor", "Bangladesh", "NGO Communication", "PhD Filmmaker"],
+  verification: {
+    google: "DLNd78EVOIj7sTBq1OHtWzXlqloH5lpYZF-yNgk_kHM",
+  },
   openGraph: {
     title: "Masud Nikson | Director & Filmmaker",
     description: "Crafting visual stories for global impact.",
@@ -18,3 +24,15 @@ export const metadata = {
     type: "website",
   },
 };
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <html lang="en">
+      <body>{children}</body>
+    </html>
+  );
+}
